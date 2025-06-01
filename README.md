@@ -1,47 +1,70 @@
-# 🔐 Password Generator
+# Currency Converter
 
-A sleek and simple password generator built with React and Tailwind CSS. Generate strong, customizable passwords with ease — including options for special characters, numbers, and adjustable length.
+A simple React currency converter app that allows you to convert between different currencies using live exchange rates.
 
----
+## Features
 
-## 🚀 Features
+- Convert any amount between supported currencies
+- Live exchange rates fetched from a public API
+- Swap currencies with a single click
+- Responsive and modern UI with a background image
 
-- Generate random passwords of customizable length (6–20 characters)
-- Option to include **special characters** and/or **numbers**
-- Password **strength indicator** (Weak, Medium, Strong)
-- One-click **copy to clipboard**
-- Beautiful, responsive UI built with Tailwind CSS
+## Demo
 
----
+![Screenshot](./image.png)
+<!-- Replace with your actual screenshot file -->
 
-## 📸 Preview
+## Getting Started
 
-| Description                  | Screenshot                 |
-|-----------------------------|----------------------------|
-| Password generated          | ![Password Generated](image-1.png) |
-| With numbers                | ![With Numbers](image.png) |
-| With numbers & characters   | ![With Numbers and Characters](image-2.png) |
-| Clipboard copy feature      | ![Clipboard Copy](image-3.png) |
+### Prerequisites
 
----
+- Node.js (v14 or above)
+- npm or yarn
 
-## 🛠 Tech Stack
+### Installation
 
-- **React** (Functional Components, Hooks)
-- **Tailwind CSS**
-- **JavaScript (ES6+)**
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/puneetdixit2004/currency-converter.git
+    cd currency-converter
+    ```
 
----
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-## 📦 Installation
+### Running the App
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/password-generator.git
-cd password-generator
-
-# Install dependencies
-npm install
-
-# Start the development server
+```sh
 npm start
+# or
+yarn start
+```
+
+The app will run at [http://localhost:3000](http://localhost:3000).
+
+## Folder Structure
+
+```
+src/
+  components/
+    inputbox.jsx
+  hook/
+    useCurrencyInfo.js
+  App.jsx
+  index.js
+```
+
+## How It Works
+
+- Enter an amount and select currencies to convert.
+- Click **Convert** to see the result.
+- Use the **swap** button to switch the "from" and "to" currencies.
+
+## API Used
+
+- [ExchangeRate API](https://open.er-api.com/v6/latest/USD)
+
